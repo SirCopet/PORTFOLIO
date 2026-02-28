@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# bmad and gemini
+.gemini/
+_bmad/
+_bmad-output/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
