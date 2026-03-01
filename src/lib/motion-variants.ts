@@ -3,31 +3,16 @@ import { Variants } from 'framer-motion';
 export const sectionVariants: Variants = {
   hidden: { 
     opacity: 0, 
-    y: 20,
-    filter: 'blur(10px)'
+    y: 15,
+    filter: 'blur(4px)'
   },
   visible: { 
     opacity: 1, 
     y: 0,
     filter: 'blur(0px)',
     transition: { 
-      duration: 0.6, 
-      ease: [0.22, 1, 0.36, 1], // easeOutQuart
-    }
-  }
-};
-
-export const glowVariants: Variants = {
-  hidden: { 
-    opacity: 0,
-    scale: 0.95
-  },
-  visible: { 
-    opacity: 1,
-    scale: 1,
-    transition: { 
-      duration: 0.8,
-      ease: 'easeOut'
+      duration: 0.5, 
+      ease: [0.25, 1, 0.5, 1], // Custom ease-out per a precisió
     }
   }
 };
@@ -37,7 +22,8 @@ export const staggerContainer: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
     },
   },
 };

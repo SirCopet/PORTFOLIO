@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "hero": "Inicio",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "location": "BARCELONA, CATALUÑA",
+    "name": "MARTÍ",
+    "role": "INGENIERO ELECTRÓNICO DE TELECOMUNICACIONES",
+    "intro": "Concibo sistemas donde el software y el hardware convergen con precisión industrial. Especializado en la arquitectura de soluciones eficientes y resilientes.",
+    "download_cv": "DESCARGAR CV"
+  },
+  "projects": {
+    "title": "PROYECTOS SELECCIONADOS",
+    "description": "Una muestra de sistemas desarrollados con rigor técnico, desde hardware de RF hasta aceleradores de IA."
+  }
+}

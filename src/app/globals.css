@@ -1,29 +1,39 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pcb-green: #22C55E;
+  --color-sky-500: #0EA5E9;
+  --color-sky-400: #38BDF8;
+  --color-pcb-green: var(--color-sky-500); /* Alias to transition colors easily */
   --color-solder-gold: #EAB308;
   --color-background: #000000;
   --color-surface: #0D1414;
 
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono);
+  --font-space: var(--font-space-grotesk);
 
-  --shadow-glow-green: 0 0 15px var(--color-pcb-green);
-  --shadow-glow-gold: 0 0 15px var(--color-solder-gold);
+  --shadow-glow-blue: 0 0 20px rgba(14, 165, 233, 0.4);
 }
 
-@utility shadow-glow-green {
-  shadow: var(--shadow-glow-green);
+@utility shadow-glow-blue {
+  shadow: var(--shadow-glow-blue);
 }
 
-@utility shadow-glow-gold {
-  shadow: var(--shadow-glow-gold);
+@utility border-bold {
+  border-width: 3px;
 }
 
 :root {
   --background: var(--color-background);
   --foreground: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
 }
 
 body {
@@ -33,7 +43,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-mono);
+  font-family: var(--font-space);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }

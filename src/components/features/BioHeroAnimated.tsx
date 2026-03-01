@@ -1,48 +1,64 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { BioData } from "@/data/bio";
+import { useTranslation } from "@/hooks/use-translation";
 import { sectionVariants, staggerContainer } from "@/lib/motion-variants";
+import { bioData } from "@/data/bio";
 
-interface BioHeroAnimatedProps {
-  bioData: BioData;
-  actions: React.ReactNode;
-}
+export function BioHeroAnimated() {
+  const { t } = useTranslation();
 
-export function BioHeroAnimated({ bioData, actions }: BioHeroAnimatedProps) {
   return (
     <motion.div
       variants={staggerContainer}
       initial="hidden"
-      animate="visible"
-      className="space-y-6"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      className="space-y-12 flex flex-col items-center text-center"
     >
-      <motion.div variants={sectionVariants} className="flex items-center space-x-2">
-        <span className="h-px w-8 bg-pcb-green shadow-glow-green" />
-        <span className="text-pcb-green font-mono text-xs tracking-widest uppercase">
-          {bioData.systemStatus} {'//'} {bioData.location}
-        </span>
-      </motion.div>
+      <div className="w-full flex flex-col items-center">
+        {/* Profile and Name Container */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 mb-10">
+          {/* Profile Photo Placeholder */}
+          <motion.div 
+            variants={sectionVariants}
+            className="relative group"
+          >
+            <div className="absolute inset-0 bg-sky-500/10 rounded-full blur-3xl group-hover:bg-sky-500/20 transition-colors duration-700" />
+            <div className="relative w-32 h-32 md:w-48 md:h-48 rounded-full border-bold border-sky-500/20 overflow-hidden bg-surface flex items-center justify-center shadow-glow-blue/50 transition-all duration-500 group-hover:border-sky-500/40">
+              <span className="text-5xl font-space font-extrabold text-sky-500/30 group-hover:text-sky-500/50 transition-colors">M_</span>
+            </div>
+          </motion.div>
 
-      <motion.div variants={sectionVariants} className="space-y-2">
-        <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tighter leading-none">
-          {bioData.name.toUpperCase()}
-          <span className="text-solder-gold">_</span>
-        </h1>
-        <h2 className="text-xl md:text-2xl font-mono text-pcb-green/80 uppercase tracking-[0.2em] font-medium">
-          {bioData.role}
-        </h2>
-      </motion.div>
+          <motion.div variants={sectionVariants} className="flex flex-col items-center md:items-start">
+            <h1 className="text-7xl md:text-[10rem] font-space font-extrabold text-white tracking-tighter leading-none">
+              {bioData.name.toUpperCase()}
+              <span className="text-sky-500">_</span>
+            </h1>
+          </motion.div>
+        </div>
 
-      <motion.div variants={sectionVariants} className="pt-4 max-w-2xl">
-        <p className="text-lg md:text-xl text-white/50 leading-relaxed">
-          {bioData.intro}
-        </p>
-      </motion.div>
+        <motion.div variants={sectionVariants} className="space-y-6 flex flex-col items-center">
+          <div className="space-y-2">
+            <h2 className="text-xl md:text-2xl font-mono text-sky-400/60 uppercase tracking-[0.2em] font-medium">
+              {bioData.role}
+            </h2>
+            <div className="flex items-center justify-center space-x-2 opacity-60">
+              <span className="h-px w-4 bg-sky-500/50" />
+              <span className="text-sky-500 font-mono text-xs tracking-widest uppercase">
+                {t.hero.location}
+              </span>
+              <span className="h-px w-4 bg-sky-500/50" />
+            </div>
+          </div>
+        </motion.div>
 
-      <motion.div variants={sectionVariants}>
-        {actions}
-      </motion.div>
+        <motion.div variants={sectionVariants} className="pt-12 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-white/50 leading-relaxed font-sans">
+            {bioData.intro}
+          </p>
+        </motion.div>
+      </div>
     </motion.div>
   );
 }

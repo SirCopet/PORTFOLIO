@@ -1,30 +1,32 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { projects } from '@/data/projects';
 import { ProjectCard } from './ProjectCard';
 import { cn } from '@/lib/utils';
 import { sectionVariants, staggerContainer } from '@/lib/motion-variants';
+import { useTranslation } from '@/hooks/use-translation';
+import { projects } from '@/data/projects';
 
 export const ProjectGallery = () => {
+  const { t } = useTranslation();
+
   return (
-    <section id="projects" className="py-24">
-      <motion.div 
-        className="container mx-auto px-6 md:px-12"
+    <section id="projects" className="py-32 bg-black">
+      <motion.div
+        className="container mx-auto px-6"
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {/* Section Header */}
-        <motion.div variants={sectionVariants} className="mb-16">
-          <h2 className="mb-2 text-3xl font-bold tracking-tight text-white uppercase">
-            Projectes Seleccionats
+        <motion.div variants={sectionVariants} className="mb-20 text-center"> 
+          <h2 className="mb-4 text-5xl font-space font-extrabold tracking-tight text-white uppercase">
+            {t.projects.title}
           </h2>
-          <div className="h-1 w-12 bg-pcb-green shadow-glow-green" />
-          <p className="mt-6 max-w-2xl text-white/60">
-            Una mostra de sistemes desenvolupats amb rigor tècnic, des de hardware de RF 
-            fins a acceleradors d&apos;IA i sistemes embebits d&apos;alta precisió.
+          <div className="h-1.5 w-24 bg-sky-500 shadow-glow-blue mx-auto rounded-full" />
+          <p className="mt-8 max-w-2xl mx-auto text-white/50 text-lg leading-relaxed font-sans">
+            {t.projects.description}
           </p>
         </motion.div>
 
@@ -32,7 +34,7 @@ export const ProjectGallery = () => {
         <motion.div 
           variants={sectionVariants}
           className={cn(
-            "grid gap-8",
+            "grid gap-12",
             "grid-cols-1", // Mobile
             "md:grid-cols-2", // Tablet
             "lg:grid-cols-3" // Desktop

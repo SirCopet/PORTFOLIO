@@ -9,11 +9,10 @@ export interface BioData {
   github: string;
   cvUrl: string;
   cvFilename: string;
-  systemStatus: string;
-}
+  }
 
-export const bioData: BioData = {
-  name: "Martí",
+  export const bioData: BioData = {
+  name: "Martí Copete",
   role: "Enginyer Electrònic de Telecomunicacions",
   specialty: "Digital Systems & Embedded Solutions",
   intro: "Concebo sistemes on el programari i el maquinari convergeixen amb precisió industrial. Especialitzat en l'arquitectura de solucions eficients i resilients.",
@@ -23,5 +22,4 @@ export const bioData: BioData = {
   github: "https://github.com/SirCopet",
   cvUrl: "/Marti_CV.pdf",
   cvFilename: "Marti_CV.pdf",
-  systemStatus: "System Ready",
-};
+  };

@@ -1,0 +1,18 @@
+{
+  "nav": {
+    "hero": "Inici",
+    "projects": "Projectes",
+    "contact": "Contacte"
+  },
+  "hero": {
+    "location": "BARCELONA, CATALUNYA",
+    "name": "MARTÍ",
+    "role": "ENGINYER ELECTRÒNIC DE TELECOMUNICACIONS",
+    "intro": "Concebo sistemes on el programari i el maquinari convergeixen amb precisió industrial. Especialitzat en l'arquitectura de solucions eficients i resilients.",
+    "download_cv": "DESCARREGAR CV"
+  },
+  "projects": {
+    "title": "PROJECTES SELECCIONATS",
+    "description": "Una mostra de sistemes desenvolupats amb rigor tècnic, des de hardware de RF fins a acceleradors d'IA."
+  }
+}
