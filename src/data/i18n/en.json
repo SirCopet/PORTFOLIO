@@ -12,7 +12,7 @@
     "download_cv": "DOWNLOAD CV"
   },
   "projects": {
-    "title": "SELECTED PROJECTS",
+    "title": "PROJECTS",
     "description": "A sample of systems developed with technical rigor, from RF hardware to AI accelerators."
   }
 }

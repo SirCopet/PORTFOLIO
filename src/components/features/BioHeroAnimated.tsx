@@ -5,6 +5,7 @@ import { useTranslation } from "@/hooks/use-translation";
 import { sectionVariants, staggerContainer } from "@/lib/motion-variants";
 import { bioData } from "@/data/bio";
 import { ContactLinks } from "@/components/ui/ContactLinks";
+import Image from "next/image";
 
 export function BioHeroAnimated() {
   const { t } = useTranslation();
@@ -20,14 +21,20 @@ export function BioHeroAnimated() {
       <div className="w-full flex flex-col items-center">
         {/* Profile and Name Container */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-4">
-          {/* Profile Photo Placeholder */}
+          {/* Profile Photo */}
           <motion.div 
             variants={sectionVariants}
             className="relative group"
           >
             <div className="absolute inset-0 bg-sky-500/10 rounded-full blur-3xl group-hover:bg-sky-500/20 transition-colors duration-700" />
             <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full border-bold border-sky-500/20 overflow-hidden bg-surface flex items-center justify-center shadow-glow-blue/50 transition-all duration-500 group-hover:border-sky-500/40">
-              <span className="text-3xl font-space font-extrabold text-sky-500/30 group-hover:text-sky-500/50 transition-colors">M_</span>
+              <Image 
+                src="/images/avatar.jpg" 
+                alt={t.hero.name} 
+                fill 
+                className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                priority
+              />
             </div>
           </motion.div>
 

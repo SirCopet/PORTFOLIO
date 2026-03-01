@@ -12,7 +12,7 @@
     "download_cv": "DESCARREGAR CV"
   },
   "projects": {
-    "title": "PROJECTES SELECCIONATS",
+    "title": "PROJECTES",
     "description": "Una mostra de sistemes desenvolupats amb rigor tècnic, des de hardware de RF fins a acceleradors d'IA."
   }
 }
