@@ -1,4 +1,4 @@
-export type ProjectCategory = 'IA' | 'RF' | 'Hardware';
+export type ProjectCategory = 'IA' | 'RF' | 'Hardware' | 'Software' | 'Backend' | 'Embedded';
 
 export interface Project {
   id: string;

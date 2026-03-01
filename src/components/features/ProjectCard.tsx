@@ -5,12 +5,15 @@ import { motion } from 'framer-motion';
 import { Github, ExternalLink } from 'lucide-react';
 import { Project } from '@/types';
 import { cn } from '@/lib/utils';
+import { useTranslation } from '@/hooks/use-translation';
 
 interface ProjectCardProps {
   project: Project;
 }
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       whileHover={{ y: -8 }}
@@ -25,7 +28,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         <div className="absolute inset-0 bg-background/40 mix-blend-overlay transition-opacity z-10 group-hover:opacity-0" />
         <Image
           src={project.imageUrl}
-          alt={project.title}
+          alt={t(project.title)}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-110"
@@ -63,11 +66,11 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
         </div>
 
         <h3 className="mb-4 font-space text-2xl font-extrabold leading-tight text-white transition-colors group-hover:text-sky-400">
-          {project.title}
+          {t(project.title)}
         </h3>
         
         <p className="mb-8 flex-1 text-sm leading-relaxed text-white/50 font-sans">
-          {project.description}
+          {t(project.description)}
         </p>
 
         {/* Technical Tags */}

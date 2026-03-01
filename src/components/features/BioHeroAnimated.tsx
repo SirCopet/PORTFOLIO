@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/use-translation";
 import { sectionVariants, staggerContainer } from "@/lib/motion-variants";
-import { bioData } from "@/data/bio";
 import { ContactLinks } from "@/components/ui/ContactLinks";
 import Image from "next/image";
 
@@ -30,7 +29,7 @@ export function BioHeroAnimated() {
             <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full border-bold border-sky-500/20 overflow-hidden bg-surface flex items-center justify-center shadow-glow-blue/50 transition-all duration-500 group-hover:border-sky-500/40">
               <Image 
                 src="/images/avatar.jpg" 
-                alt={t.hero.name} 
+                alt={t('hero.name')} 
                 fill 
                 className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 priority
@@ -40,7 +39,7 @@ export function BioHeroAnimated() {
 
           <motion.div variants={sectionVariants} className="flex flex-col items-center md:items-start">
             <h1 className="text-5xl md:text-7xl font-space font-extrabold text-white tracking-tighter leading-none uppercase">
-              {t.hero.name}
+              {t('hero.name')}
             </h1>
           </motion.div>
         </div>
@@ -48,12 +47,12 @@ export function BioHeroAnimated() {
         <motion.div variants={sectionVariants} className="space-y-4 flex flex-col items-center">
           <div className="space-y-2">
             <h2 className="text-lg md:text-xl font-mono text-sky-400/60 uppercase tracking-[0.2em] font-medium">
-              {t.hero.role}
+              {t('hero.role')}
             </h2>
             <div className="flex items-center justify-center space-x-2 opacity-60">
               <span className="h-px w-4 bg-sky-500/50" />
               <span className="text-sky-500 font-mono text-[10px] tracking-widest uppercase">
-                {t.hero.location}
+                {t('hero.location')}
               </span>
               <span className="h-px w-4 bg-sky-500/50" />
             </div>
@@ -63,7 +62,7 @@ export function BioHeroAnimated() {
 
         <motion.div variants={sectionVariants} className="pt-4 max-w-2xl mx-auto">
           <p className="text-base md:text-lg text-white/50 leading-relaxed font-sans">
-            {t.hero.intro}
+            {t('hero.intro')}
           </p>
         </motion.div>
       </div>

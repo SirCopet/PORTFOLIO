@@ -35,8 +35,8 @@ export const Navbar = () => {
   };
 
   const navItems = [
-    { id: SECTIONS.HERO, name: t.nav.hero },
-    { id: SECTIONS.PROJECTS, name: t.nav.projects },
+    { id: SECTIONS.HERO, name: t('nav.hero') },
+    { id: SECTIONS.PROJECTS, name: t('nav.projects') },
   ];
 
   return (

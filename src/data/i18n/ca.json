@@ -13,6 +13,41 @@
   },
   "projects": {
     "title": "PROJECTES",
-    "description": "Una mostra de sistemes desenvolupats amb rigor tècnic, des de hardware de RF fins a acceleradors d'IA."
+    "description": "Una mostra de sistemes desenvolupats amb rigor tècnic, des de hardware de RF fins a acceleradors d'IA.",
+    "items": {
+      "cpu-practice": {
+        "title": "Disseny i implementació d'una miniCPU en FPGA",
+        "description": "A través del kit DE10-Lite disseny de les parts essencials d'una CPU. Introducció al VHDL i la programació de FPGAs."
+      },
+      "oop-practice": {
+        "title": "Disseny i Programació Orientada a Objectes",
+        "description": "Introducció a Java programant una aplicació amb un stack front-end i back-end simple per a poder fer funcionar un minijoc.",
+        "longDescription": "Principis SOLID, Modelatge i anàlisi de software, principis de la programació OOP, persistència de dades, concurrència."
+      },
+      "chat-pdf": {
+        "title": "ChatPDF",
+        "description": "Petit programa utilitzant Python i APIs d'Intel·ligència Artificial generativa per a poder crear un ChatPDF a nivell acadèmic.",
+        "longDescription": "A través de l'assignatura Intel·ligència Artificial Aplicada a la Robòtica hem tocat diversos conceptes de ML, DL i utilització d'APIs de tercers per a analitzar dades i obtenir resultats de bases de dades acadèmiques."
+      },
+      "ls-battleship": {
+        "title": "Assembly: Sistema digital PIC18 (Battleship)",
+        "description": "Disseny i implementació manual amb xips de la família 74 en placa topada i ampliació amb un PIC18F utilitzant assembly.",
+        "longDescription": "Durant aquesta pràctica hem travessat conceptes d'electrònica digital i lògica de portes, programació a nivell d'assemblador, disseny de sistemes digitals i resolució de bugs en laboratori de mesures per a poder implementar un minijoc: el clàssic battleship. Per a aconseguir-ho s'ha hagut d'implementar una part de la placa amb components molt bàsics de la família 74 com comptadors, registres, sincronismes en soldadura tova. Un cop aconseguida la primera part d'entrada: teclat matriu, joystick; un SSS (màquina d'estats) és l'encarregada de controlar la lògica del joc i les sortides del sistema: altaveu, pantalla matriu, altaveu pwm, UART; tot implementat en Assembly."
+      },
+      "ls-smartlight": {
+        "title": "C: Sistema Cooperatiu digital PIC18 (SmartLight)",
+        "description": "Disseny i implementació sobre una PIC18 el control de perifèrics de forma cooperativa, integrats en PCB.",
+        "longDescription": "En aquest projecte hem implementat un sistema que, mitjançant un lector RFID, pot controlar el nivell de llum d'una sala. Programat en C i de forma cooperativa l'objectiu d'aquest projecte ha estat aprendre a gestionar el temps a escala de microprocessadors i la memòria d'un xip tan reduït com una PIC18."
+      },
+      "the-citadel": {
+        "title": "The Citadel System",
+        "description": "Disseny i implementació d'un sistema distribuït multitasca basat en una arquitectura de xarxa per a la gestió d'aliances i comerç.",
+        "longDescription": "Desenvolupament d'un ecosistema complex format per processos `Maester` (servidors) i `Envoy` (agents) que es comuniquen mitjançant sockets i protocols personalitzats. El projecte aborda la gestió de la concurrència, la sincronització de processos, l'ús de memòria compartida, la gestió de fitxers de configuració i inventari, i la implementació de protocols de xarxa robustos amb verificació d'integritat (MD5SUM)."
+      },
+      "gnss-frontend": {
+        "title": "Disseny d'un Front-End Actiu GNSS",
+        "description": "Disseny d'un sistema de recepció actiu per a senyals GNSS (En progrés)."
+      }
+    }
   }
 }

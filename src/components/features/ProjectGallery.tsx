@@ -22,11 +22,11 @@ export const ProjectGallery = () => {
         {/* Section Header */}
         <motion.div variants={sectionVariants} className="mb-20 text-center"> 
           <h2 className="mb-4 text-5xl font-space font-extrabold tracking-tight text-white uppercase">
-            {t.projects.title}
+            {t('projects.title')}
           </h2>
           <div className="h-1.5 w-24 bg-sky-500 shadow-glow-blue mx-auto rounded-full" />
           <p className="mt-8 max-w-2xl mx-auto text-white/50 text-lg leading-relaxed font-sans">
-            {t.projects.description}
+            {t('projects.description')}
           </p>
         </motion.div>
 
