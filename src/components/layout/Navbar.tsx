@@ -44,7 +44,7 @@ export const Navbar = () => {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled 
-          ? 'bg-black/90 backdrop-blur-md py-4 border-b border-sky-500/20 shadow-lg' 
+          ? 'bg-black/90 backdrop-blur-md py-4 border-b border-primary-500/20 shadow-lg' 
           : 'bg-transparent py-6 border-b border-transparent'
       )}
     >
@@ -69,7 +69,7 @@ export const Navbar = () => {
                 {activeSection === item.id && (
                   <motion.div
                     layoutId="nav-indicator"
-                    className="absolute -bottom-1 left-0 right-0 h-[2px] bg-sky-500 shadow-glow-blue"
+                    className="absolute -bottom-1 left-0 right-0 h-[2px] bg-primary-500 shadow-glow-primary"
                     initial={false}
                     transition={{ 
                       type: 'spring', 
@@ -92,7 +92,7 @@ export const Navbar = () => {
               }}
               aria-expanded={isLangOpen}
               aria-haspopup="listbox"
-              className="flex items-center gap-1.5 text-xs font-mono text-white/60 hover:text-sky-500 transition-colors uppercase tracking-widest px-2 py-1 rounded-md border border-white/5 bg-white/5 focus:outline-none focus:border-sky-500"
+              className="flex items-center gap-1.5 text-xs font-mono text-white/60 hover:text-primary-500 transition-colors uppercase tracking-widest px-2 py-1 rounded-md border border-white/5 bg-white/5 focus:outline-none focus:border-primary-500"
             >
               <Globe size={14} />
               {language}
@@ -104,7 +104,7 @@ export const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   role="listbox"
-                  className="absolute top-full right-0 mt-2 bg-surface border border-sky-500/20 rounded-xl overflow-hidden shadow-2xl min-w-[100px]"
+                  className="absolute top-full right-0 mt-2 bg-surface border border-primary-500/20 rounded-xl overflow-hidden shadow-2xl min-w-[100px]"
                 >
                   {(['ca', 'es', 'en'] as const).map((lang) => (
                     <button
@@ -116,8 +116,8 @@ export const Navbar = () => {
                         setIsLangOpen(false);
                       }}
                       className={cn(
-                        "w-full px-4 py-2 text-left text-xs font-mono uppercase transition-colors hover:bg-sky-500/10",
-                        language === lang ? "text-sky-500 bg-sky-500/5" : "text-white/40"
+                        "w-full px-4 py-2 text-left text-xs font-mono uppercase transition-colors hover:bg-primary-500/10",
+                        language === lang ? "text-primary-500 bg-primary-500/5" : "text-white/40"
                       )}
                     >
                       {lang === 'ca' ? 'CAT' : lang === 'es' ? 'ESP' : 'ENG'}   
@@ -158,12 +158,12 @@ export const Navbar = () => {
                   onClick={() => scrollToSection(item.id)}
                   className={cn(
                     'text-2xl font-space font-bold text-left tracking-wider uppercase transition-colors flex items-center gap-4',
-                    activeSection === item.id ? 'text-sky-500' : 'text-white/50'
+                    activeSection === item.id ? 'text-primary-500' : 'text-white/50'
                   )}
                 >
                   <span className={cn(
                     "w-2 h-2 rounded-full transition-all duration-300",
-                    activeSection === item.id ? "bg-sky-500 shadow-glow-blue" : "bg-white/10"
+                    activeSection === item.id ? "bg-primary-500 shadow-glow-primary" : "bg-white/10"
                   )} />
                   {item.name}
                 </button>

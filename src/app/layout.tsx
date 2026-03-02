@@ -19,8 +19,21 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "PORTFOLIO - Active Stealth",
-  description: "A professional portfolio with Active Stealth aesthetic.",
+  title: "MARTÍ COPETE | PORTFOLIO",
+  description: "Telecommunications & Electronic Engineering.",
+  openGraph: {
+    title: "MARTÍ COPETE | PORTFOLIO",
+    description: "Telecommunications & Electronic Engineering.",
+    type: "website",
+    locale: "ca_ES",
+    url: "https://marticopete.space",
+    siteName: "Martí Copete Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MARTÍ COPETE | PORTFOLIO",
+    description: "Telecommunications & Electronic Engineering.",
+  },
 };
 
 export default function RootLayout({

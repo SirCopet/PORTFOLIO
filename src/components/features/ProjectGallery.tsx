@@ -11,20 +11,20 @@ export const ProjectGallery = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="py-32 bg-black">
+    <section id="projects" className="py-20 bg-black">
       <motion.div
         className="container mx-auto px-6"
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ once: true, amount: 0.05 }}
       >
         {/* Section Header */}
-        <motion.div variants={sectionVariants} className="mb-20 text-center"> 
+        <motion.div variants={sectionVariants} className="mb-12 text-center"> 
           <h2 className="mb-4 text-5xl font-space font-extrabold tracking-tight text-white uppercase">
             {t('projects.title')}
           </h2>
-          <div className="h-1.5 w-24 bg-sky-500 shadow-glow-blue mx-auto rounded-full" />
+          <div className="h-1.5 w-24 bg-primary-500 shadow-glow-primary mx-auto rounded-full" />
           <p className="mt-8 max-w-2xl mx-auto text-white/50 text-lg leading-relaxed font-sans">
             {t('projects.description')}
           </p>

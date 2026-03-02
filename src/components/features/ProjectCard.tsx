@@ -23,11 +23,11 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       transition={{ duration: 0.4, ease: 'easeOut' }}
       className={cn(
         'group relative flex flex-col overflow-hidden rounded-3xl border-bold border-gray-700 bg-surface/50 backdrop-blur-sm transition-all duration-300',
-        'hover:border-sky-500 hover:shadow-glow-blue'
+        'hover:border-primary-500 hover:shadow-glow-primary'
       )}
     >
       {/* Project Image */}
-      <div className="relative aspect-video w-full overflow-hidden border-b border-gray-700 group-hover:border-sky-500/30 transition-colors">
+      <div className="relative aspect-video w-full overflow-hidden border-b border-gray-700 group-hover:border-primary-500/30 transition-colors">
         <div className="absolute inset-0 bg-background/40 mix-blend-overlay transition-opacity z-10 group-hover:opacity-0" />
         <Image
           src={project.imageUrl}
@@ -42,7 +42,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="flex flex-1 flex-col p-8">
         <div className="mb-4 flex items-center justify-between">
           <div className="flex flex-wrap gap-2">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-sky-500 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-primary-500 bg-primary-500/10 px-3 py-1 rounded-full border border-primary-500/20">
               {project.category} {'//'} {project.year}
             </span>
             <span className={cn(
@@ -60,7 +60,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                 href={project.githubUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-white/40 transition-colors hover:text-sky-500"
+                className="text-white/40 transition-colors hover:text-primary-500"
               >
                 <Github size={18} />
               </a>
@@ -70,7 +70,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                 href={project.liveUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-white/40 transition-colors hover:text-sky-500"
+                className="text-white/40 transition-colors hover:text-primary-500"
               >
                 <ExternalLink size={18} />
               </a>
@@ -78,7 +78,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         </div>
 
-        <h3 className="mb-4 font-space text-2xl font-extrabold leading-tight text-white transition-colors group-hover:text-sky-400">
+        <h3 className="mb-4 font-space text-2xl font-extrabold leading-tight text-white transition-colors group-hover:text-primary-400">
           {t(project.title)}
         </h3>
         
@@ -93,7 +93,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
               onClick={() => setIsExpanded(!isExpanded)}
               aria-expanded={isExpanded}
               aria-controls={`desc-${project.id}`}
-              className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-sky-500/60 hover:text-sky-500 transition-colors group/btn"
+              className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-widest text-primary-500/60 hover:text-primary-500 transition-colors group/btn"
             >
               {isExpanded ? (
                 <>
@@ -118,7 +118,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
                   transition={{ duration: 0.3, ease: 'easeInOut' }}
                   className="overflow-hidden"
                 >
-                  <p className="mt-4 text-xs leading-relaxed text-white/40 font-sans border-l-2 border-sky-500/20 pl-4">
+                  <p className="mt-4 text-xs leading-relaxed text-white/40 font-sans border-l-2 border-primary-500/20 pl-4">
                     {t(project.longDescription)}
                   </p>
                 </motion.div>

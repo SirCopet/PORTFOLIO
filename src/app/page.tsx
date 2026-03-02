@@ -12,7 +12,7 @@ export default function Home() {
       <ProjectGallery />
       
       {/* Footer / Contact Section */}
-      <footer id="contact" className="py-20 border-t border-sky-500/10 bg-surface/30">
+      <footer id="contact" className="py-20 border-t border-primary-500/10 bg-surface/30">
         <div className="container mx-auto px-6 text-center">
           <p className="text-white/20 font-mono text-xs uppercase tracking-[0.3em]">
             &copy; {new_year} MARTÍ COPETE

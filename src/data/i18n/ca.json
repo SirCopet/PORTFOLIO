@@ -84,6 +84,15 @@
     "title": "HABILITATS TÈCNIQUES",
     "software": "Software",
     "hardware": "Hardware",
-    "others": "Altres"
+    "others": "Altres",
+    "items": {
+      "Circuit Design": "Disseny de circuits",
+      "PCBs": "PCBs",
+      "Component Analysis": "Anàlisi de components",
+      "Radiofrequency": "Radiofreqüència",
+      "Artificial Intelligence": "Intel·ligència Artificial",
+      "Microcontroller": "Microcontroladors",
+      "RF Simulation": "Simulació RF"
+    }
   }
 }

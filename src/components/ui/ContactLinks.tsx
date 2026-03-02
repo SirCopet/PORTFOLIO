@@ -36,7 +36,7 @@ export function ContactLinks({ className }: ContactLinksProps) {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.label}
-          className="text-white/40 transition-all duration-300 p-2 rounded-full border border-transparent hover:border-sky-500/20 hover:text-sky-500 hover:shadow-glow-blue"
+          className="text-white/40 transition-all duration-300 p-2 rounded-full border border-transparent hover:border-primary-500/20 hover:text-primary-500 hover:shadow-glow-primary"
         >
           <link.icon size={20} />
         </a>

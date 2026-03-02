@@ -13,20 +13,20 @@ export const skills: Skill[] = [
   { name: 'Spring', color: '#10b981', category: 'Software' }, // Emerald
 
   // Hardware
-  { name: 'Disseny de circuits', color: '#2dd4bf', category: 'Hardware' }, // Teal
+  { name: 'Circuit Design', color: '#2dd4bf', category: 'Hardware' }, // Teal
   { name: 'PCBs', color: '#16a34a', category: 'Hardware' }, // Green
-  { name: 'Anàlisi de components', color: '#6366f1', category: 'Hardware' }, // Indigo
-  { name: 'Radiofreqüència', color: '#f43f5e', category: 'Hardware' }, // Rose
+  { name: 'Component Analysis', color: '#6366f1', category: 'Hardware' }, // Indigo
+  { name: 'Radiofrequency', color: '#f43f5e', category: 'Hardware' }, // Rose
 
   // Others
   { name: 'CCNA', color: '#2563eb', category: 'Others' }, // Blue-600
   { name: 'Swagger', color: '#4ade80', category: 'Others' }, // Green-400
   { name: 'REST APIs', color: '#06b6d4', category: 'Others' }, // Cyan
-  { name: 'Intel·ligència Artificial', color: '#d946ef', category: 'Others' }, // Fuchsia
+  { name: 'Artificial Intelligence', color: '#d946ef', category: 'Others' }, // Fuchsia
   { name: 'AI', color: '#d946ef', category: 'Others' },
   { name: 'BMAD', color: '#0ea5e9', category: 'Others' }, // Sky-500
   { name: 'Hardware', color: '#f59e0b', category: 'Hardware' }, // Amber
-  { name: 'Microcontrolador', color: '#10b981', category: 'Hardware' }, // Emerald
+  { name: 'Microcontroller', color: '#10b981', category: 'Hardware' }, // Emerald
   { name: 'Verilog', color: '#8b5cf6', category: 'Software' }, // Violet
   { name: 'Altium Designer', color: '#fb923c', category: 'Hardware' }, // Orange
   { name: 'RF Simulation', color: '#f43f5e', category: 'Hardware' }, // Rose

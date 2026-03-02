@@ -84,6 +84,15 @@
     "title": "HABILIDADES TÉCNICAS",
     "software": "Software",
     "hardware": "Hardware",
-    "others": "Otros"
+    "others": "Otros",
+    "items": {
+      "Circuit Design": "Diseño de circuitos",
+      "PCBs": "PCBs",
+      "Component Analysis": "Análisis de componentes",
+      "Radiofrequency": "Radiofrecuencia",
+      "Artificial Intelligence": "Inteligencia Artificial",
+      "Microcontroller": "Microcontroladores",
+      "RF Simulation": "Simulación RF"
+    }
   }
 }

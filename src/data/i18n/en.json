@@ -84,6 +84,15 @@
     "title": "TECHNICAL SKILLS",
     "software": "Software",
     "hardware": "Hardware",
-    "others": "Others"
+    "others": "Others",
+    "items": {
+      "Circuit Design": "Circuit Design",
+      "PCBs": "PCBs",
+      "Component Analysis": "Component Analysis",
+      "Radiofrequency": "Radiofrequency",
+      "Artificial Intelligence": "Artificial Intelligence",
+      "Microcontroller": "Microcontroller",
+      "RF Simulation": "RF Simulation"
+    }
   }
 }
