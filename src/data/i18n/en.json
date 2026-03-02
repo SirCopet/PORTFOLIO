@@ -7,7 +7,7 @@
   "hero": {
     "location": "BARCELONA, CATALONIA",
     "name": "MARTÍ",
-    "role": "TELECOMMUNICATIONS ELECTRONIC ENGINEER",
+    "role": "TELECOMMUNICATIONS & ELECTRONIC ENGINEERING",
     "intro": "I conceive systems where software and hardware converge with industrial precision. Specialized in the architecture of efficient and resilient solutions.",
     "download_cv": "DOWNLOAD CV"
   },
@@ -15,13 +15,13 @@
     "title": "TRAJECTORY",
     "items": {
       "degree": {
-        "title": "Telecommunications Electronic Engineering",
+        "title": "Telecommunications & Electronic Engineering",
         "company": "La Salle - URL",
         "period": "2022 - 2026",
         "description": "Specializing in electronic systems and software integration."
       },
       "worldline": {
-        "title": "Software Engineering Intern",
+        "title": "Full-Stack Intern",
         "company": "Worldline",
         "period": "2025 - Present",
         "description": "Developing and maintaining payment processing systems."

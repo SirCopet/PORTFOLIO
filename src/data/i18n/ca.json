@@ -7,21 +7,21 @@
   "hero": {
     "location": "BARCELONA, CATALUNYA",
     "name": "MARTÍ",
-    "role": "ENGINYER ELECTRÒNIC DE TELECOMUNICACIONS",
+    "role": "ENGINYERIA ELECTRÒNICA DE TELECOMUNICACIONS",
     "intro": "Concebo sistemes on el programari i el maquinari convergeixen amb precisió industrial. Especialitzat en l'arquitectura de solucions eficients i resilients.",
     "download_cv": "DESCARREGAR CV"
-  },
-  "experience": {
+    },
+    "experience": {
     "title": "TRAJECTÒRIA",
     "items": {
       "degree": {
-        "title": "Grau en Enginyeria Electrònica de Telecomunicacions",
+        "title": "Enginyeria Electrònica de Telecomunicacions",
         "company": "La Salle - URL",
         "period": "2022 - 2026",
         "description": "Especialització en sistemes electrònics i integració de programari."
       },
       "worldline": {
-        "title": "Enginyer de Programari en Pràctiques",
+        "title": "Pràctiques Full-Stack",
         "company": "Worldline",
         "period": "2025 - Actualitat",
         "description": "Desenvolupament i manteniment de sistemes de processament de pagaments."

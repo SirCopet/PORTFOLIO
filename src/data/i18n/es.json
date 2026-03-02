@@ -7,21 +7,21 @@
   "hero": {
     "location": "BARCELONA, CATALUÑA",
     "name": "MARTÍ",
-    "role": "INGENIERO ELECTRÓNICO DE TELECOMUNICACIONES",
+    "role": "INGENIERÍA ELECTRÓNICA DE TELECOMUNICACIONES",
     "intro": "Concibo sistemas donde el software y el hardware convergen con precisión industrial. Especializado en la arquitectura de soluciones eficientes y resilientes.",
     "download_cv": "DESCARGAR CV"
-  },
-  "experience": {
+    },
+    "experience": {
     "title": "TRAYECTORIA",
     "items": {
       "degree": {
-        "title": "Grado en Ingeniería Electrónica de Telecomunicaciones",
+        "title": "Ingeniería Electrónica de Telecomunicaciones",
         "company": "La Salle - URL",
         "period": "2022 - 2026",
         "description": "Especialización en sistemas electrónicos e integración de software."
       },
       "worldline": {
-        "title": "Ingeniero de Software en Prácticas",
+        "title": "Prácticas Full-Stack",
         "company": "Worldline",
         "period": "2025 - Actualidad",
         "description": "Desarrollo y mantenimiento de sistemas de procesamiento de pagos."
