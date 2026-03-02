@@ -6,7 +6,7 @@
   },
   "hero": {
     "location": "BARCELONA, CATALUNYA",
-    "name": "MARTÍ",
+    "name": "MARTÍ COPETE",
     "role": "ENGINYERIA ELECTRÒNICA DE TELECOMUNICACIONS",
     "intro": "Concebo sistemes on el programari i el maquinari convergeixen amb precisió industrial. Especialitzat en l'arquitectura de solucions eficients i resilients.",
     "download_cv": "DESCARREGAR CV"
@@ -30,7 +30,7 @@
   },
   "projects": {
     "title": "PROJECTES",
-    "description": "Una mostra de sistemes desenvolupats amb rigor tècnic, des de hardware de RF fins a acceleradors d'IA.",
+    "description": "",
     "items": {
       "cpu-practice": {
         "title": "Disseny i implementació d'una miniCPU en FPGA",
@@ -57,13 +57,18 @@
         "longDescription": "En aquest projecte hem implementat un sistema que, mitjançant un lector RFID, pot controlar el nivell de llum d'una sala. Programat en C i de forma cooperativa l'objectiu d'aquest projecte ha estat aprendre a gestionar el temps a escala de microprocessadors i la memòria d'un xip tan reduït com una PIC18."
       },
       "the-citadel": {
-        "title": "The Citadel System",
+        "title": "Sistemes Operatius: Citadel System",
         "description": "Disseny i implementació d'un sistema distribuït multitasca basat en una arquitectura de xarxa per a la gestió d'aliances i comerç.",
         "longDescription": "Desenvolupament d'un ecosistema complex format per processos `Maester` (servidors) i `Envoy` (agents) que es comuniquen mitjançant sockets i protocols personalitzats. El projecte aborda la gestió de la concurrència, la sincronització de processos, l'ús de memòria compartida, la gestió de fitxers de configuració i inventari, i la implementació de protocols de xarxa robustos amb verificació d'integritat (MD5SUM)."
       },
       "gnss-frontend": {
         "title": "Disseny d'un Front-End Actiu GNSS",
         "description": "Disseny d'un sistema de recepció actiu per a senyals GNSS (En progrés)."
+      },
+      "bmad-portfolio": {
+        "title": "BMAD: Portafoli",
+        "description": "Implementació d'un sistema d'agents intel·ligents (BMad) per a la gestió i actualització dinàmica del portafoli personal.",
+        "longDescription": "Aquest projecte integra el framework BMad per a crear un entorn de treball assistit per IA que permet l'automatització de tasques de desenvolupament, gestió de continguts i desplegament, optimitzant el flux de treball personal."
       }
     },
     "types": {
@@ -74,5 +79,11 @@
       "show_more": "Més detalls",
       "show_less": "Menys detalls"
     }
+  },
+  "skills": {
+    "title": "HABILITATS TÈCNIQUES",
+    "software": "Software",
+    "hardware": "Hardware",
+    "others": "Altres"
   }
 }

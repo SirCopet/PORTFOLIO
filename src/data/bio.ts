@@ -17,7 +17,7 @@ export interface BioData {
   specialty: "Digital Systems & Embedded Solutions",
   intro: "Concebo sistemes on el programari i el maquinari convergeixen amb precisió industrial. Especialitzat en l'arquitectura de solucions eficients i resilients.",
   location: "Barcelona, Catalunya",
-  email: "marti@example.com",
+  email: "copetemarti@gmail.com",
   linkedin: "https://www.linkedin.com/in/marti-copete/",
   github: "https://github.com/SirCopet",
   cvUrl: "/Marti_CV.pdf",

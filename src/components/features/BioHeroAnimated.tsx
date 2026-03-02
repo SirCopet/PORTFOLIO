@@ -20,24 +20,23 @@ export function BioHeroAnimated() {
       <div className="w-full border-2 border-sky-500/50 rounded-3xl p-6 md:p-16 lg:p-20 bg-surface/30 hover:shadow-glow-blue transition-[border-color,shadow] hover:border-sky-500 duration-500">
         <div className="w-full flex flex-col items-center">
           {/* Profile and Name Container */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 mb-8">
             {/* Profile Photo */}
-            <motion.div 
+            <motion.div
               variants={sectionVariants}
               className="relative group"
             >
               <div className="absolute inset-0 bg-sky-500/10 rounded-full blur-3xl group-hover:bg-sky-500/20 transition-colors duration-700" />
-              <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-full border-bold border-sky-500/20 overflow-hidden bg-surface flex items-center justify-center group-hover:shadow-glow-blue/50 transition-all duration-500 group-hover:border-sky-500/40">
-                <Image 
-                  src="/images/avatar.jpg" 
-                  alt={t('hero.name')} 
-                  fill 
+              <div className="relative w-32 h-32 md:w-44 md:h-44 rounded-full border-bold border-sky-500/20 overflow-hidden bg-surface flex items-center justify-center group-hover:shadow-glow-blue/50 transition-all duration-500 group-hover:border-sky-500/40">
+                <Image
+                  src="/images/avatar.jpg"
+                  alt={t('hero.name')}
+                  fill
                   className="object-cover transition-all duration-700"
                   priority
                 />
               </div>
             </motion.div>
-
             <motion.div variants={sectionVariants} className="flex flex-col items-center">
               <h1 className="text-5xl md:text-7xl font-space font-extrabold text-white tracking-tighter leading-none uppercase">
                 {t('hero.name')}

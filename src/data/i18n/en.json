@@ -6,7 +6,7 @@
   },
   "hero": {
     "location": "BARCELONA, CATALONIA",
-    "name": "MARTÍ",
+    "name": "MARTÍ COPETE",
     "role": "TELECOMMUNICATIONS & ELECTRONIC ENGINEERING",
     "intro": "I conceive systems where software and hardware converge with industrial precision. Specialized in the architecture of efficient and resilient solutions.",
     "download_cv": "DOWNLOAD CV"
@@ -30,7 +30,7 @@
   },
   "projects": {
     "title": "PROJECTS",
-    "description": "A sample of systems developed with technical rigor, from RF hardware to AI accelerators.",
+    "description": "",
     "items": {
       "cpu-practice": {
         "title": "FPGA miniCPU Design & Implementation",
@@ -57,13 +57,18 @@
         "longDescription": "In this project, we implemented a system that, through an RFID reader, can control the light level of a room. Programmed in C and cooperatively, the goal of this project has been to learn to manage time at the microprocessor scale and the memory of a chip as small as a PIC18."
       },
       "the-citadel": {
-        "title": "Operating Systems: The Citadel",
+        "title": "Operating Systems: Citadel System",
         "description": "Design and implementation of a multitasking distributed system based on a network architecture for alliance and trade management.",
         "longDescription": "Development of a complex ecosystem consisting of Maester processes (servers) and Envoy processes (agents) that communicate through sockets and custom protocols. The project addresses concurrency management, process synchronization, shared memory use, management of configuration and inventory files, and implementation of robust network protocols with integrity verification (MD5SUM)."
       },
       "gnss-frontend": {
         "title": "Active GNSS Front-End Design",
         "description": "Design of an active reception system for GNSS signals (In progress)."
+      },
+      "bmad-portfolio": {
+        "title": "BMAD: Portfolio",
+        "description": "Implementation of an intelligent agent system (BMad) for the dynamic management and updating of the personal portfolio.",
+        "longDescription": "This project integrates the BMad framework to create an AI-assisted workspace that allows for the automation of development tasks, content management, and deployment, optimizing the personal workflow."
       }
     },
     "types": {
@@ -71,8 +76,14 @@
       "personal": "personal"
     },
     "actions": {
-      "show_more": "Show details",
+      "show_more": "Show more",
       "show_less": "Show less"
     }
+  },
+  "skills": {
+    "title": "TECHNICAL SKILLS",
+    "software": "Software",
+    "hardware": "Hardware",
+    "others": "Others"
   }
 }

@@ -4,13 +4,18 @@ import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { BioHeroAnimated } from "./BioHeroAnimated";
 import { ExperienceSection } from "./ExperienceSection";
+import { SkillSection } from "./SkillSection";
 
 export function BioHero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-black">
-      <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
-        <BioHeroAnimated />
-        <ExperienceSection />
+      <div className="w-full max-w-6xl flex flex-col gap-10 md:gap-14">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
+          <BioHeroAnimated />
+          <ExperienceSection />
+        </div>
+        
+        <SkillSection />
       </div>
 
       {/* Scroll Indicator */}

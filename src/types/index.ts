@@ -21,3 +21,9 @@ export interface Experience {
   period: string;
   description: string;
 }
+
+export interface Skill {
+  name: string;
+  color: string;
+  category: 'Software' | 'Hardware' | 'Others';
+}

@@ -7,6 +7,7 @@ import { Github, ExternalLink, ChevronDown, ChevronUp } from 'lucide-react';
 import { Project } from '@/types';
 import { cn } from '@/lib/utils';
 import { useTranslation } from '@/hooks/use-translation';
+import { getSkillColor } from '@/data/skills';
 
 interface ProjectCardProps {
   project: Project;
@@ -128,14 +129,22 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
 
         {/* Technical Tags */}
         <div className="flex flex-wrap gap-2 mt-auto">
-          {project.technologies.map((tech) => (
-            <span 
-              key={tech} 
-              className="border border-white/5 bg-white/5 px-3 py-1 rounded-lg font-mono text-[9px] uppercase tracking-widest text-white/30 transition-colors group-hover:border-sky-500/20 group-hover:text-sky-500/60"
-            >
-              {tech}
-            </span>
-          ))}
+          {project.technologies.map((tech) => {
+            const color = getSkillColor(tech);
+            return (
+              <span 
+                key={tech} 
+                className="px-3 py-1 rounded-lg font-mono text-[9px] uppercase tracking-widest transition-all duration-300 border border-white/5 bg-white/5 text-white/30 group-hover:text-white/60"
+                style={color ? {
+                  color: color,
+                  borderColor: `${color}4D`,
+                  backgroundColor: `${color}1A`
+                } : {}}
+              >
+                {tech}
+              </span>
+            );
+          })}
         </div>
       </div>
 

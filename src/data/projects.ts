@@ -2,6 +2,17 @@ import { Project } from '@/types';
 
 export const projects: Project[] = [
   {
+    id: 'bmad-portfolio',
+    title: 'projects.items.bmad-portfolio.title',
+    description: 'projects.items.bmad-portfolio.description',
+    longDescription: 'projects.items.bmad-portfolio.longDescription',
+    technologies: ['BMad', 'AI', 'Next.js', 'TypeScript', 'Automation'],
+    imageUrl: '/images/projects/portfolio-bmad.png',
+    category: 'IA',
+    year: '2026',
+    type: 'personal'
+  },
+  {
     id: 'gnss-frontend',
     title: 'projects.items.gnss-frontend.title',
     description: 'projects.items.gnss-frontend.description',
@@ -71,7 +82,7 @@ export const projects: Project[] = [
     description: 'projects.items.chat-pdf.description',
     longDescription: 'projects.items.chat-pdf.longDescription',
     technologies: ['AI', 'Prompt Engineering', 'Python', 'Chroma DB', 'Google Colab'],
-    imageUrl: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800',
+    imageUrl: '/images/projects/chat-pdf.png',
     category: 'IA',
     year: '2024',
     type: 'academic'
