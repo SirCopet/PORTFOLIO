@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useAppStore } from '@/store/use-app-store';
 import { cn } from '@/lib/utils';
 import { Menu, X, Globe } from 'lucide-react';
-import { NAV_ITEMS, SECTIONS } from '@/lib/constants';
+import { NAV_ITEMS } from '@/lib/constants';
 import { useTranslation } from '@/hooks/use-translation';
 
 export const Navbar = () => {
@@ -34,30 +34,21 @@ export const Navbar = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const navItems = [
-    { id: SECTIONS.HERO, name: t('nav.hero') },
-    { id: SECTIONS.PROJECTS, name: t('nav.projects') },
-  ];
+  const navItems = NAV_ITEMS.map(item => ({
+    ...item,
+    name: t(`nav.${item.id}`)
+  }));
 
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
         isScrolled 
-          ? 'bg-black/90 backdrop-blur-xl py-3 border-b border-sky-500/10 shadow-lg' 
+          ? 'bg-black/90 backdrop-blur-md py-4 border-b border-sky-500/20 shadow-lg' 
           : 'bg-transparent py-6 border-b border-transparent'
       )}
     >
-      <nav className="container mx-auto px-6 flex justify-between items-center" aria-label="Navegació principal">
-        {/* Logo / Brand */}
-        <button 
-          onClick={() => scrollToSection(SECTIONS.HERO)}
-          className="text-2xl font-space font-extrabold tracking-tighter text-white group flex items-center gap-1"
-          aria-label="Tornar a l'inici"
-        >
-          MARTÍ<span className="text-sky-500 group-hover:animate-pulse">_</span>
-        </button>
-
+      <nav className="container mx-auto px-6 flex justify-end items-center" aria-label="Navegació principal">
         <div className="flex items-center gap-8">
           {/* Desktop Navigation */}
           <ul className="hidden md:flex gap-10 relative">
@@ -82,7 +73,7 @@ export const Navbar = () => {
                     initial={false}
                     transition={{ 
                       type: 'spring', 
-                      stiffness: 350, 
+                      stiffness: 250, 
                       damping: 30,
                       mass: 1 
                     }}
@@ -181,6 +172,8 @@ export const Navbar = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
     </header>
+
   );
 };

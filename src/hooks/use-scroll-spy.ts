@@ -22,9 +22,9 @@ export const useScrollSpy = (sectionIds: string[], threshold = 0.2) => {
           }
         });
       },
-      { 
-        threshold: [0.1, 0.2, 0.3],
-        rootMargin: '-20% 0px -60% 0px' 
+      {
+        threshold: [0.1, 0.2, 0.3, 0.4, 0.5],
+        rootMargin: '-20% 0px -40% 0px'
       }    );
 
     const observer = observerRef.current;

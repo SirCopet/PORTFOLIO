@@ -11,6 +11,23 @@
     "intro": "I conceive systems where software and hardware converge with industrial precision. Specialized in the architecture of efficient and resilient solutions.",
     "download_cv": "DOWNLOAD CV"
   },
+  "experience": {
+    "title": "TRAJECTORY",
+    "items": {
+      "degree": {
+        "title": "Telecommunications Electronic Engineering",
+        "company": "La Salle - URL",
+        "period": "2022 - 2026",
+        "description": "Specializing in electronic systems and software integration."
+      },
+      "worldline": {
+        "title": "Software Engineering Intern",
+        "company": "Worldline",
+        "period": "2025 - Present",
+        "description": "Developing and maintaining payment processing systems."
+      }
+    }
+  },
   "projects": {
     "title": "PROJECTS",
     "description": "A sample of systems developed with technical rigor, from RF hardware to AI accelerators.",
@@ -40,7 +57,7 @@
         "longDescription": "In this project, we implemented a system that, through an RFID reader, can control the light level of a room. Programmed in C and cooperatively, the goal of this project has been to learn to manage time at the microprocessor scale and the memory of a chip as small as a PIC18."
       },
       "the-citadel": {
-        "title": "The Citadel System",
+        "title": "Operating Systems: The Citadel",
         "description": "Design and implementation of a multitasking distributed system based on a network architecture for alliance and trade management.",
         "longDescription": "Development of a complex ecosystem consisting of Maester processes (servers) and Envoy processes (agents) that communicate through sockets and custom protocols. The project addresses concurrency management, process synchronization, shared memory use, management of configuration and inventory files, and implementation of robust network protocols with integrity verification (MD5SUM)."
       },
@@ -48,6 +65,14 @@
         "title": "Active GNSS Front-End Design",
         "description": "Design of an active reception system for GNSS signals (In progress)."
       }
+    },
+    "types": {
+      "academic": "academic",
+      "personal": "personal"
+    },
+    "actions": {
+      "show_more": "Show details",
+      "show_less": "Show less"
     }
   }
 }

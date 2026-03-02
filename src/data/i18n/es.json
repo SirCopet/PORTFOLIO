@@ -11,6 +11,23 @@
     "intro": "Concibo sistemas donde el software y el hardware convergen con precisión industrial. Especializado en la arquitectura de soluciones eficientes y resilientes.",
     "download_cv": "DESCARGAR CV"
   },
+  "experience": {
+    "title": "TRAYECTORIA",
+    "items": {
+      "degree": {
+        "title": "Grado en Ingeniería Electrónica de Telecomunicaciones",
+        "company": "La Salle - URL",
+        "period": "2022 - 2026",
+        "description": "Especialización en sistemas electrónicos e integración de software."
+      },
+      "worldline": {
+        "title": "Ingeniero de Software en Prácticas",
+        "company": "Worldline",
+        "period": "2025 - Actualidad",
+        "description": "Desarrollo y mantenimiento de sistemas de procesamiento de pagos."
+      }
+    }
+  },
   "projects": {
     "title": "PROYECTOS",
     "description": "Una muestra de sistemas desarrollados con rigor técnico, desde hardware de RF hasta aceleradores de IA.",
@@ -40,7 +57,7 @@
         "longDescription": "En este proyecto hemos implementado un sistema que, mediante un lector RFID, puede controlar el nivel de luz de una sala. Programado en C y de forma cooperativa el objetivo de este proyecto ha sido aprender a gestionar el tiempo a escala de microprocesadores y la memoria de un chip tan reducido como una PIC18."
       },
       "the-citadel": {
-        "title": "The Citadel System",
+        "title": "Sistemas Operativos: The Citadel",
         "description": "Diseño e implementación de un sistema distribuido multitarea basado en una arquitectura de red para la gestión de alianzas y comercio.",
         "longDescription": "Desarrollo de un ecosistema complejo formado por procesos `Maester` (servidores) y `Envoy` (agentes) que se comunican mediante sockets y protocolos personalizados. El proyecto aborda la gestión de la concurrencia, la sincronización de procesos, el uso de memoria compartida, la gestión de archivos de configuración e inventario, y la implementación de protocolos de red robustos con verificación de integridad (MD5SUM)."
       },
@@ -48,6 +65,14 @@
         "title": "Diseño de un Front-End Activo GNSS",
         "description": "Diseño de un sistema de recepción activo para señales GNSS (En progreso)."
       }
+    },
+    "types": {
+      "academic": "académico",
+      "personal": "personal"
+    },
+    "actions": {
+      "show_more": "Más detalles",
+      "show_less": "Menos detalles"
     }
   }
 }

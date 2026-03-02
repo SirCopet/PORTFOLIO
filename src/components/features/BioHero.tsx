@@ -3,12 +3,14 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { BioHeroAnimated } from "./BioHeroAnimated";
+import { ExperienceSection } from "./ExperienceSection";
 
 export function BioHero() {
   return (
     <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-black">
-      <div className="w-full max-w-5xl flex flex-col items-center justify-center border-bold border-sky-500/50 rounded-3xl p-8 md:p-20 bg-surface/30 shadow-glow-blue transition-[border-color,shadow] hover:border-sky-500 duration-500">
+      <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
         <BioHeroAnimated />
+        <ExperienceSection />
       </div>
 
       {/* Scroll Indicator */}

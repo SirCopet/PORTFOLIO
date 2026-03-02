@@ -11,4 +11,13 @@ export interface Project {
   liveUrl?: string;
   category: ProjectCategory;
   year: string;
+  type: 'academic' | 'personal';
+}
+
+export interface Experience {
+  id: string;
+  title: string;
+  company: string;
+  period: string;
+  description: string;
 }

@@ -1,7 +1,6 @@
 export const SECTIONS = {
   HERO: 'hero',
   PROJECTS: 'projects',
-  CONTACT: 'contact',
 } as const;
 
 export const SECTION_IDS = Object.values(SECTIONS);
@@ -9,5 +8,4 @@ export const SECTION_IDS = Object.values(SECTIONS);
 export const NAV_ITEMS = [
   { name: 'Inici', id: SECTIONS.HERO },
   { name: 'Projectes', id: SECTIONS.PROJECTS },
-  { name: 'Contacte', id: SECTIONS.CONTACT },
 ];

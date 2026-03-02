@@ -11,6 +11,23 @@
     "intro": "Concebo sistemes on el programari i el maquinari convergeixen amb precisió industrial. Especialitzat en l'arquitectura de solucions eficients i resilients.",
     "download_cv": "DESCARREGAR CV"
   },
+  "experience": {
+    "title": "TRAJECTÒRIA",
+    "items": {
+      "degree": {
+        "title": "Grau en Enginyeria Electrònica de Telecomunicacions",
+        "company": "La Salle - URL",
+        "period": "2022 - 2026",
+        "description": "Especialització en sistemes electrònics i integració de programari."
+      },
+      "worldline": {
+        "title": "Enginyer de Programari en Pràctiques",
+        "company": "Worldline",
+        "period": "2025 - Actualitat",
+        "description": "Desenvolupament i manteniment de sistemes de processament de pagaments."
+      }
+    }
+  },
   "projects": {
     "title": "PROJECTES",
     "description": "Una mostra de sistemes desenvolupats amb rigor tècnic, des de hardware de RF fins a acceleradors d'IA.",
@@ -48,6 +65,14 @@
         "title": "Disseny d'un Front-End Actiu GNSS",
         "description": "Disseny d'un sistema de recepció actiu per a senyals GNSS (En progrés)."
       }
+    },
+    "types": {
+      "academic": "acadèmic",
+      "personal": "personal"
+    },
+    "actions": {
+      "show_more": "Més detalls",
+      "show_less": "Menys detalls"
     }
   }
 }
