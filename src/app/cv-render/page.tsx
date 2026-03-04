@@ -3,7 +3,7 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { bioDataMultilingual, BioData } from '../../../private/bio';
-import { Globe, Phone, MapPin, Mail } from 'lucide-react';
+import { Globe, Mail } from 'lucide-react';
 
 function CVContent() {
   const searchParams = useSearchParams();
@@ -46,14 +46,6 @@ function CVContent() {
               <Globe className="w-3.5 h-3.5 text-blue-500" />
               <span>{data.url.replace(/^https?:\/\//, '')}</span>
             </a>
-            <div className="flex items-center gap-2">
-              <Phone className="w-3.5 h-3.5 text-blue-500" />
-              <span>{data.phone}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-3.5 h-3.5 text-blue-500" />
-              <span>{data.location}</span>
-            </div>
             <div className="flex items-center gap-2">
               <Mail className="w-3.5 h-3.5 text-blue-500" />
               <span>{data.email}</span>
