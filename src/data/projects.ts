@@ -2,6 +2,17 @@ import { Project } from '@/types';
 
 export const projects: Project[] = [
   {
+    id: 'ls-encoder-ctrl',
+    title: 'projects.items.ls-encoder-ctrl.title',
+    description: 'projects.items.ls-encoder-ctrl.description',
+    longDescription: 'projects.items.ls-encoder-ctrl.longDescription',
+    technologies: ['C', 'STM32', 'Microcontroladors'],
+    imageUrl: '/images/projects/ls-encoder-ctrl.jpeg',
+    category: 'Embedded',
+    year: '2026',
+    type: 'academic'
+  },
+  {
     id: 'bmad-portfolio',
     title: 'projects.items.bmad-portfolio.title',
     description: 'projects.items.bmad-portfolio.description',

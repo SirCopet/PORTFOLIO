@@ -65,6 +65,11 @@
         "title": "Diseño de un Front-End Activo GNSS",
         "description": "Diseño de un sistema de recepción activo para señales GNSS (En progreso)."
       },
+      "ls-encoder-ctrl": {
+        "title": "STM32: Control de encoder de posición para impresora de inyección de tinta",
+        "description": "Sistema bare-metal en C para el STM32F429I-DISC1 que procesa un encoder en cuadratura, calcula velocidad y distancia, y genera señales de control para una impresora de inyección de tinta.",
+        "longDescription": "En esta práctica se ha desarrollado un sistema completo de gestión de un encoder de posición en C para el microcontrolador STM32, sin ningún RTOS ni capa HAL de alto nivel. El sistema procesa las señales en cuadratura de un encoder óptico para determinar la dirección del movimiento en tiempo real. Calcula la velocidad instantánea y media del carro, detecta la zona de impresión y gestiona errores por inversión de dirección durante el ciclo activo."
+      },
       "bmad-portfolio": {
         "title": "BMAD: Portafolio",
         "description": "Implementación de un sistema de agentes inteligentes (BMad) para la gestión y actualización dinámica del portafolio personal.",

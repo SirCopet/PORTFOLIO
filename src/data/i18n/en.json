@@ -65,6 +65,11 @@
         "title": "Active GNSS Front-End Design",
         "description": "Design of an active reception system for GNSS signals (In progress)."
       },
+      "ls-encoder-ctrl": {
+        "title": "STM32: Position Encoder Control for Inkjet Printer",
+        "description": "Bare-metal C system for the STM32F429I-DISC1 that processes a quadrature encoder, calculates speed and distance, and generates control signals for an inkjet printer.",
+        "longDescription": "In this practice, a complete position encoder management system was developed in C for the STM32 microcontroller, without any RTOS or high-level HAL layer. The system processes the quadrature signals from an optical encoder to determine the direction of movement in real time. It calculates the instantaneous and average speed of the carriage, detects the printing zone, and handles errors due to direction reversal during the active cycle."
+      },
       "bmad-portfolio": {
         "title": "BMAD: Portfolio",
         "description": "Implementation of an intelligent agent system (BMad) for the dynamic management and updating of the personal portfolio.",

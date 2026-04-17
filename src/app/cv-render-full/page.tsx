@@ -46,6 +46,10 @@ function CVContent() {
               <Globe className="w-3.5 h-3.5 text-blue-500" />
               <span>{data.url.replace(/^https?:\/\//, '')}</span>
             </a>
+            <div className="flex items-center gap-2">
+              <Mail className="w-3.5 h-3.5 text-blue-500" />
+              <span>{data.email}</span>
+            </div>
             <a
               href={data.linkedin}
               target="_blank"
@@ -55,10 +59,6 @@ function CVContent() {
               <Linkedin className="w-3.5 h-3.5 text-blue-500" />
               <span>{data.linkedin.replace(/^https?:\/\/(www\.)?/, '')}</span>
             </a>
-            <div className="flex items-center gap-2">
-              <Mail className="w-3.5 h-3.5 text-blue-500" />
-              <span>{data.email}</span>
-            </div>
             <div className="flex items-center gap-2">
               <Phone className="w-3.5 h-3.5 text-blue-500" />
               <span>{data.phone}</span>

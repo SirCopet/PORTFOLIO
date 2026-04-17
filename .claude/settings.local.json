@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(wc -l \"C:/Users/copet/OneDrive/Escritorio/WORK/PORTFOLIO/.planning/codebase/\"*.md)"
+      "Bash(wc -l \"C:/Users/copet/OneDrive/Escritorio/WORK/PORTFOLIO/.planning/codebase/\"*.md)",
+      "Bash(xargs grep:*)"
     ]
   }
 }
