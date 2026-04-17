@@ -1,35 +1,49 @@
 import { Skill } from '@/types';
 
 export const skills: Skill[] = [
-  // Software
-  { name: 'C', color: '#3b82f6', category: 'Software' }, // Blue
-  { name: 'Java', color: '#ef4444', category: 'Software' }, // Red
-  { name: 'Python', color: '#facc15', category: 'Software' }, // Yellow
-  { name: 'VHDL', color: '#a855f7', category: 'Software' }, // Purple
-  { name: 'Assembly', color: '#9ca3af', category: 'Software' }, // Gray
-  { name: 'Matlab', color: '#ea580c', category: 'Software' }, // Orange
-  { name: 'SQL', color: '#38bdf8', category: 'Software' }, // Sky
-  { name: 'Angular', color: '#dc2626', category: 'Software' }, // Red-600
-  { name: 'Spring', color: '#10b981', category: 'Software' }, // Emerald
+  // Software — Systems/HDL Languages
+  { name: 'C', color: '#818cf8', category: 'Software' },
+  { name: 'Assembly', color: '#818cf8', category: 'Software' },
+  { name: 'VHDL', color: '#818cf8', category: 'Software' },
+  { name: 'Verilog', color: '#818cf8', category: 'Software' },
 
-  // Hardware
-  { name: 'Circuit Design', color: '#2dd4bf', category: 'Hardware' }, // Teal
-  { name: 'PCBs', color: '#16a34a', category: 'Hardware' }, // Green
-  { name: 'Component Analysis', color: '#6366f1', category: 'Hardware' }, // Indigo
-  { name: 'Radiofrequency', color: '#f43f5e', category: 'Hardware' }, // Rose
+  // Software — General Purpose Languages
+  { name: 'Java', color: '#60a5fa', category: 'Software' },
+  { name: 'Python', color: '#60a5fa', category: 'Software' },
+  { name: 'Matlab', color: '#60a5fa', category: 'Software' },
 
-  // Others
-  { name: 'CCNA', color: '#2563eb', category: 'Others' }, // Blue-600
-  { name: 'Swagger', color: '#4ade80', category: 'Others' }, // Green-400
-  { name: 'REST APIs', color: '#06b6d4', category: 'Others' }, // Cyan
-  { name: 'Artificial Intelligence', color: '#d946ef', category: 'Others' }, // Fuchsia
-  { name: 'AI', color: '#d946ef', category: 'Others' },
-  { name: 'BMAD', color: '#0ea5e9', category: 'Others' }, // Sky-500
-  { name: 'Hardware', color: '#f59e0b', category: 'Hardware' }, // Amber
-  { name: 'Microcontroller', color: '#10b981', category: 'Hardware' }, // Emerald
-  { name: 'Verilog', color: '#8b5cf6', category: 'Software' }, // Violet
-  { name: 'Altium Designer', color: '#fb923c', category: 'Hardware' }, // Orange
-  { name: 'RF Simulation', color: '#f43f5e', category: 'Hardware' }, // Rose
+  // Software — Frameworks
+  { name: 'Angular', color: '#34d399', category: 'Software' },
+  { name: 'Spring', color: '#34d399', category: 'Software' },
+
+  // Software — Database
+  { name: 'SQL', color: '#38bdf8', category: 'Software' },
+
+  // Hardware — Design
+  { name: 'Circuit Design', color: '#fb923c', category: 'Hardware' },
+  { name: 'PCBs', color: '#fb923c', category: 'Hardware' },
+  { name: 'Altium Designer', color: '#fb923c', category: 'Hardware' },
+
+  // Hardware — Embedded
+  { name: 'Microcontroller', color: '#a3e635', category: 'Hardware' },
+  { name: 'Hardware', color: '#a3e635', category: 'Hardware' },
+
+  // Hardware — RF & Analysis
+  { name: 'Radiofrequency', color: '#f87171', category: 'Hardware' },
+  { name: 'RF Simulation', color: '#f87171', category: 'Hardware' },
+  { name: 'Component Analysis', color: '#f87171', category: 'Hardware' },
+
+  // Others — Networking & APIs
+  { name: 'CCNA', color: '#2dd4bf', category: 'Others' },
+  { name: 'REST APIs', color: '#2dd4bf', category: 'Others' },
+
+  // Others — Dev Tools
+  { name: 'Swagger', color: '#94a3b8', category: 'Others' },
+
+  // Others — AI / ML
+  { name: 'Artificial Intelligence', color: '#e879f9', category: 'Others' },
+  { name: 'AI', color: '#e879f9', category: 'Others' },
+  { name: 'BMAD', color: '#e879f9', category: 'Others' },
 ];
 
 export const getSkillColor = (name: string): string | null => {

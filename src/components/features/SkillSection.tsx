@@ -13,13 +13,10 @@ const SkillBadge = ({ name, color, t }: { name: string, color: string, t: (k: st
     : t(`skills.items.${name}`);
 
   return (
-    <motion.div
-      variants={sectionVariants}
-      className="group relative"
-      whileHover={{ y: -2 }}
-    >
+    <motion.div variants={sectionVariants} className="group relative">
+      <motion.div whileHover={{ y: -2 }} transition={{ duration: 0.15 }}>
       <span
-        className="px-3 py-1.5 rounded-xl border text-[10px] md:text-xs font-mono font-bold transition-all duration-300 cursor-default flex items-center gap-2"
+        className="px-3 py-1.5 border text-[10px] md:text-xs font-mono font-bold transition-all duration-300 cursor-default flex items-center gap-2"
         style={{
           color: color,
           borderColor: `${color}4D`,
@@ -32,10 +29,7 @@ const SkillBadge = ({ name, color, t }: { name: string, color: string, t: (k: st
         />
         {translatedName}
       </span>
-      <div 
-        className="absolute inset-0 blur-md opacity-0 group-hover:opacity-20 transition-opacity rounded-full"
-        style={{ backgroundColor: color }}
-      />
+      </motion.div>
     </motion.div>
   );
 };
@@ -90,7 +84,7 @@ export function SkillSection() {
         <div className="h-px flex-1 bg-gradient-to-r from-primary-500/30 to-transparent" />
       </motion.div>
 
-      <div className="relative w-full border-2 border-primary-500/50 rounded-3xl p-8 md:p-12 bg-surface/30 hover:shadow-glow-primary transition-[border-color,shadow] hover:border-primary-500 duration-500 overflow-hidden">
+      <div className="relative w-full p-8 md:p-12 bg-gradient-to-r from-primary-500/10 via-surface/30 to-transparent border-t-2 border-primary-500 overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500/5 blur-[100px] -z-10" />
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-purple-500/5 blur-[100px] -z-10" />
 

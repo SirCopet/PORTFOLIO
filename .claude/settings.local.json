@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l \"C:/Users/copet/OneDrive/Escritorio/WORK/PORTFOLIO/.planning/codebase/\"*.md)"
+    ]
+  }
+}

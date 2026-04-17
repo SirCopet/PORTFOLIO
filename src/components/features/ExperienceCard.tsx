@@ -21,16 +21,17 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
     <motion.div
       whileHover={{ y: -4 }}
-      className="group relative flex flex-col p-6 md:p-8 rounded-3xl border-2 border-primary-500/80 bg-surface/30 backdrop-blur-sm transition-all duration-300 hover:border-primary-500 hover:shadow-glow-primary"
+      className="group relative flex flex-col p-6 md:p-8 bg-gradient-to-b from-primary-500/10 to-black backdrop-blur-sm transition-all duration-300 border-l-2 border-primary-500"
     >
       <div className="flex justify-between items-start mb-4">
-        <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary-400 bg-primary-500/10 px-4 py-1.5 rounded-full border border-primary-500/20 font-bold">
+        <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary-400 bg-primary-500/10 px-4 py-1.5 border border-primary-500/20 font-bold">
           {t(experience.period)}
         </span>
+
       </div>
       
       <div className="space-y-2">
-        <h3 className="font-space text-xl font-extrabold text-white leading-tight group-hover:text-primary-400 transition-colors uppercase tracking-tight">
+        <h3 className="font-space text-xl font-extrabold text-white leading-tight uppercase tracking-tight">
           {t(experience.title)}
         </h3>
         

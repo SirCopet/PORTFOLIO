@@ -14,6 +14,7 @@ export interface Education {
 export interface Skills {
   software: string[];
   hardware: string[];
+  laboratori: string[];
   other: string[];
 }
 
@@ -42,6 +43,7 @@ export interface BioData {
     skills: string;
     software: string;
     hardware: string;
+    laboratori: string;
     other: string;
     education: string;
     present: string;
@@ -75,8 +77,8 @@ export const bioDataMultilingual: Record<string, BioData> = {
         role: "Dependent, transportista i gestió informàtica",
         duration: "2019 - Present",
         description: [
-          "Atenció al client i transport de mercaderies en comerç local al Vallès.",
-          "Gestió informàtica de productes de roba de forma intermitent durant el transcurs."
+          "Atenció al client i transport de mercaderies en comerç local al Vallès de roba de forma intermitent durant el transcurs.",
+          "Gestió informàtica de productes"
         ]
       }
     ],
@@ -94,7 +96,8 @@ export const bioDataMultilingual: Record<string, BioData> = {
     ],
     skills: {
       software: ["C", "Java", "Python", "VHDL", "Assembly", "Matlab", "SQL", "Angular", "Spring"],
-      hardware: ["Disseny i implementació de circuits", "PCBs", "anàlisi de components electrònics i radiofreqüència"],
+      hardware: ["Disseny, implementació i anàlisi de circuits digitals, analògics i de radiofreqüència", "PCBs", "FPGA"],
+      laboratori: ["Oscil·loscopi", "Analitzador d'espectres", "Analitzador de Xarxes Vectorial", "Més..." ],
       other: ["CCNA (intermediate)", "Swagger", "REST APIs", "Intel·ligència Artificial"]
     },
     languages: [
@@ -113,6 +116,7 @@ export const bioDataMultilingual: Record<string, BioData> = {
       skills: "Habilitats Tècniques",
       software: "Software",
       hardware: "Hardware",
+      laboratori: "Laboratori",
       other: "Altres",
       education: "Educació",
       present: "Present"
@@ -163,6 +167,7 @@ export const bioDataMultilingual: Record<string, BioData> = {
     skills: {
       software: ["C", "Java", "Python", "VHDL", "Assembly", "Matlab", "SQL", "Angular", "Spring"],
       hardware: ["Circuit design and implementation", "PCBs", "electronic analysis", "radiofrequency"],
+      laboratori: ["Oscilloscope", "Spectrum Analyzer", "Vector Network Analyzer", "More..."],
       other: ["CCNA (intermediate)", "Swagger", "REST APIs", "Artificial Intelligence"]
     },
     languages: [
@@ -181,6 +186,7 @@ export const bioDataMultilingual: Record<string, BioData> = {
       skills: "Technical Abilities",
       software: "Software",
       hardware: "Hardware",
+      laboratori: "Laboratory",
       other: "Other",
       education: "Education",
       present: "Present"
@@ -231,6 +237,7 @@ export const bioDataMultilingual: Record<string, BioData> = {
     skills: {
       software: ["C", "Java", "Python", "VHDL", "Assembly", "Matlab", "SQL", "Angular", "Spring"],
       hardware: ["Diseño e implementación de circuitos", "PCBs", "análisis de componentes electrónicos y radiofrecuencia"],
+      laboratori: ["Osciloscopio", "Analizador de espectros", "Analizador de redes vectorial", "Más..."],
       other: ["CCNA (intermediate)", "Swagger", "REST APIs", "Inteligencia Artificial"]
     },
     languages: [
@@ -249,6 +256,7 @@ export const bioDataMultilingual: Record<string, BioData> = {
       skills: "Habilidades Técnicas",
       software: "Software",
       hardware: "Hardware",
+      laboratori: "Laboratorio",
       other: "Otros",
       education: "Educación",
       present: "Presente"

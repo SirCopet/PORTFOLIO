@@ -11,7 +11,7 @@ export const ProjectGallery = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="py-20 bg-black">
+    <section id="projects" className="py-20 relative z-[1]">
       <motion.div
         className="container mx-auto px-6"
         variants={staggerContainer}
@@ -24,7 +24,7 @@ export const ProjectGallery = () => {
           <h2 className="mb-4 text-5xl font-space font-extrabold tracking-tight text-white uppercase">
             {t('projects.title')}
           </h2>
-          <div className="h-1.5 w-24 bg-primary-500 shadow-glow-primary mx-auto rounded-full" />
+          <div className="h-1.5 w-24 bg-primary-500 mx-auto" />
           <p className="mt-8 max-w-2xl mx-auto text-white/50 text-lg leading-relaxed font-sans">
             {t('projects.description')}
           </p>

@@ -22,12 +22,11 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       whileHover={{ y: -8 }}
       transition={{ duration: 0.4, ease: 'easeOut' }}
       className={cn(
-        'group relative flex flex-col overflow-hidden rounded-3xl border-bold border-gray-700 bg-surface/50 backdrop-blur-sm transition-all duration-300',
-        'hover:border-primary-500 hover:shadow-glow-primary'
+        'group relative flex flex-col overflow-hidden bg-gradient-to-br from-primary-500/20 to-black transition-all duration-300'
       )}
     >
       {/* Project Image */}
-      <div className="relative aspect-video w-full overflow-hidden border-b border-gray-700 group-hover:border-primary-500/30 transition-colors">
+      <div className="relative aspect-video w-full overflow-hidden">
         <div className="absolute inset-0 bg-background/40 mix-blend-overlay transition-opacity z-10 group-hover:opacity-0" />
         <Image
           src={project.imageUrl}
@@ -39,16 +38,16 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
 
       {/* Content */}
-      <div className="flex flex-1 flex-col p-8">
+      <div className="flex flex-1 flex-col p-8 border-t-2 border-primary-500">
         <div className="mb-4 flex items-center justify-between">
           <div className="flex flex-wrap gap-2">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-primary-500 bg-primary-500/10 px-3 py-1 rounded-full border border-primary-500/20">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-primary-500 bg-primary-500/10 px-3 py-1 border border-primary-500/20">
               {project.category} {'//'} {project.year}
             </span>
             <span className={cn(
-              "font-mono text-[10px] uppercase tracking-widest px-3 py-1 rounded-full border",
-              project.type === 'academic' 
-                ? "text-purple-400 bg-purple-400/10 border-purple-400/20" 
+              "font-mono text-[10px] uppercase tracking-widest px-3 py-1 border",
+              project.type === 'academic'
+                ? "text-purple-400 bg-purple-400/10 border-purple-400/20"
                 : "text-emerald-400 bg-emerald-400/10 border-emerald-400/20"
             )}>
               {t(`projects.types.${project.type}`)}
@@ -78,7 +77,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         </div>
 
-        <h3 className="mb-4 font-space text-2xl font-extrabold leading-tight text-white transition-colors group-hover:text-primary-400">
+        <h3 className="mb-4 font-space text-2xl font-extrabold leading-tight text-white">
           {t(project.title)}
         </h3>
         
@@ -134,7 +133,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
             return (
               <span 
                 key={tech} 
-                className="px-3 py-1 rounded-lg font-mono text-[9px] uppercase tracking-widest transition-all duration-300 border border-white/5 bg-white/5 text-white/30 group-hover:text-white/60"
+                className="px-3 py-1 font-mono text-[9px] uppercase tracking-widest transition-all duration-300 border border-white/5 bg-white/5 text-white/30 group-hover:text-white/60"
                 style={color ? {
                   color: color,
                   borderColor: `${color}4D`,

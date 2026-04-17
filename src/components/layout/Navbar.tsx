@@ -92,7 +92,7 @@ export const Navbar = () => {
               }}
               aria-expanded={isLangOpen}
               aria-haspopup="listbox"
-              className="flex items-center gap-1.5 text-xs font-mono text-white/60 hover:text-primary-500 transition-colors uppercase tracking-widest px-2 py-1 rounded-md border border-white/5 bg-white/5 focus:outline-none focus:border-primary-500"
+              className="flex items-center gap-1.5 text-xs font-mono text-white/60 hover:text-primary-500 transition-colors uppercase tracking-widest px-2 py-1 border border-white/5 bg-white/5 focus:outline-none focus:border-primary-500"
             >
               <Globe size={14} />
               {language}
@@ -104,7 +104,7 @@ export const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
                   role="listbox"
-                  className="absolute top-full right-0 mt-2 bg-surface border border-primary-500/20 rounded-xl overflow-hidden shadow-2xl min-w-[100px]"
+                  className="absolute top-full right-0 mt-2 bg-surface border border-primary-500/20 overflow-hidden shadow-2xl min-w-[100px]"
                 >
                   {(['ca', 'es', 'en'] as const).map((lang) => (
                     <button

@@ -8,7 +8,7 @@ import { SkillSection } from "./SkillSection";
 
 export function BioHero() {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 bg-black">
+    <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center px-6 py-20 z-[1]">
       <div className="w-full max-w-6xl flex flex-col gap-6 md:gap-8">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 items-start">
           <BioHeroAnimated />
