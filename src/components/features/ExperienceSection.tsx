@@ -18,7 +18,7 @@ export const ExperienceSection = () => {
       className="flex flex-col gap-6 w-full"
     >
       <motion.div variants={sectionVariants} className="flex items-center gap-4 mb-2">
-        <h2 className="font-space text-sm font-black text-primary-400/80 tracking-[0.2em] uppercase">
+        <h2 className="font-space text-sm font-black text-primary-400 tracking-[0.2em] uppercase">
           {t('experience.title')}
         </h2>
         <div className="h-px flex-1 bg-gradient-to-r from-primary-500/30 to-transparent" />

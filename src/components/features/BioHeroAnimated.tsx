@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/use-translation";
 import { sectionVariants, staggerContainer } from "@/lib/motion-variants";
 import { ContactLinks } from "@/components/ui/ContactLinks";
-import { Download } from "lucide-react";
 import Image from "next/image";
 
 export function BioHeroAnimated() {
@@ -21,7 +20,7 @@ export function BioHeroAnimated() {
       <div className="w-full p-6 md:p-10 lg:p-12 bg-gradient-to-br from-primary-500/10 to-transparent border-t-2 border-primary-500">
         <div className="w-full flex flex-col items-center">
           {/* Profile and Name Container */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-12">
             {/* Profile Photo */}
             <motion.div
               variants={sectionVariants}
@@ -63,15 +62,6 @@ export function BioHeroAnimated() {
             
             <div className="flex flex-col items-center gap-6">
               <ContactLinks className="justify-center" />
-              
-              <a
-                href={`/cvs/marti_copete_cv_${language}.pdf`}
-                download={`marti_copete_cv_${language}.pdf`}
-                className="group relative flex items-center gap-2 px-6 py-3 bg-primary-500/10 hover:bg-primary-500/20 border border-primary-500/30 hover:border-primary-500 text-primary-400 hover:text-primary-500 font-mono text-[10px] tracking-widest uppercase transition-all duration-300"
-              >
-                <Download size={16} className="group-hover:animate-bounce" />
-                <span>{t('hero.download_cv')}</span>
-              </a>
             </div>
           </motion.div>
         </div>

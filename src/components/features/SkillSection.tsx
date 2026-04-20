@@ -37,7 +37,7 @@ const SkillBadge = ({ name, color, t }: { name: string, color: string, t: (k: st
 const SkillGroup = ({ title, items, t }: { title: string, items: typeof skills, t: (k: string) => string }) => (
   <div className="flex flex-col gap-4">
     <div className="flex items-center gap-3">
-      <h3 className="text-[10px] font-mono text-primary-400/60 tracking-widest uppercase font-black">
+      <h3 className="text-[10px] font-mono text-primary-400 tracking-widest uppercase font-black">
         {title}
       </h3>
       <div className="h-px flex-1 bg-primary-500/10" />
@@ -78,7 +78,7 @@ export function SkillSection() {
       className="w-full"
     >
       <motion.div variants={sectionVariants} className="flex items-center gap-4 mb-6">
-        <h2 className="font-space text-sm font-black text-primary-400/80 tracking-[0.2em] uppercase">
+        <h2 className="font-space text-sm font-black text-primary-400 tracking-[0.2em] uppercase">
           {t('skills.title')}
         </h2>
         <div className="h-px flex-1 bg-gradient-to-r from-primary-500/30 to-transparent" />

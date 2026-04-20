@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { bioDataMultilingual, BioData } from '../../../private/bio';
+import { bioDataMultilingual, BioData } from '../../../private/bio_alba';
 import { Globe, Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 
 function CVContent() {
@@ -35,6 +35,9 @@ function CVContent() {
             <h2 className="text-lg font-semibold text-blue-600 tracking-wide">
               {data.role}
             </h2>
+            <p className="text-sm text-gray-500 font-medium tracking-wide">
+              {data.subsection}
+            </p>
           </div>
           <div className="flex flex-col items-start space-y-1.5 text-xs text-gray-600 font-medium">
             <a
@@ -153,16 +156,24 @@ function CVContent() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-xs font-semibold text-gray-800 mb-1">{data.labels.hardware}</h4>
-                  <p className="text-xs text-gray-700 leading-relaxed text-left">
-                    {data.skills.hardware.join(' • ')}
-                  </p>
+                  <h4 className="text-xs font-semibold text-gray-800 mb-1.5">{data.labels.hardware_laboratori}</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {data.skills.hardware_laboratori.map((skill, idx) => (
+                      <span key={idx} className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-[10px] font-medium border border-gray-200">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 <div>
-                  <h4 className="text-xs font-semibold text-gray-800 mb-1">{data.labels.other}</h4>
-                  <p className="text-xs text-gray-700 leading-relaxed text-left">
-                    {data.skills.other.join(' • ')}
-                  </p>
+                  <h4 className="text-xs font-semibold text-gray-800 mb-1.5">{data.labels.other}</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {data.skills.other.map((skill, idx) => (
+                      <span key={idx} className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-[10px] font-medium border border-gray-200">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </section>
