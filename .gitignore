@@ -49,3 +49,7 @@ next-env.d.ts
 private/
 .planning/
 
+# CV generation pages (depend on private data, local-only)
+src/app/cv-render/
+src/app/cv-render-full/
+
