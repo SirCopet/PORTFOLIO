@@ -5,7 +5,6 @@ export const skills: Skill[] = [
   { name: 'C', color: '#818cf8', category: 'Software' },
   { name: 'Assembly', color: '#818cf8', category: 'Software' },
   { name: 'VHDL', color: '#818cf8', category: 'Software' },
-  { name: 'Verilog', color: '#818cf8', category: 'Software' },
 
   // Software — General Purpose Languages
   { name: 'Java', color: '#60a5fa', category: 'Software' },
@@ -22,16 +21,15 @@ export const skills: Skill[] = [
   // Hardware — Design
   { name: 'Circuit Design', color: '#fb923c', category: 'Hardware' },
   { name: 'PCBs', color: '#fb923c', category: 'Hardware' },
-  { name: 'Altium Designer', color: '#fb923c', category: 'Hardware' },
-
-  // Hardware — Embedded
-  { name: 'Microcontroller', color: '#a3e635', category: 'Hardware' },
-  { name: 'Hardware', color: '#a3e635', category: 'Hardware' },
+  { name: 'FPGA', color: '#fb923c', category: 'Hardware' },
 
   // Hardware — RF & Analysis
   { name: 'Radiofrequency', color: '#f87171', category: 'Hardware' },
-  { name: 'RF Simulation', color: '#f87171', category: 'Hardware' },
-  { name: 'Component Analysis', color: '#f87171', category: 'Hardware' },
+
+  // Hardware — Lab
+  { name: 'Oscilloscope', color: '#c084fc', category: 'Hardware' },
+  { name: 'Spectrum Analyzer', color: '#c084fc', category: 'Hardware' },
+  { name: 'Vector Network Analyzer', color: '#c084fc', category: 'Hardware' },
 
   // Others — Networking & APIs
   { name: 'CCNA', color: '#2dd4bf', category: 'Others' },
@@ -42,8 +40,6 @@ export const skills: Skill[] = [
 
   // Others — AI / ML
   { name: 'Artificial Intelligence', color: '#e879f9', category: 'Others' },
-  { name: 'AI', color: '#e879f9', category: 'Others' },
-  { name: 'BMAD', color: '#e879f9', category: 'Others' },
 ];
 
 export const getSkillColor = (name: string): string | null => {

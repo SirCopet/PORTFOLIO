@@ -2,23 +2,56 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { bioDataMultilingual, BioData } from '../../../private/bio_alba';
+import { bioDataMultilingual as bioDataAlba, BioData } from '../../../private/bio_alba';
+import { bioDataMultilingual as bioDataDefault } from '../../../private/bio_default';
+
+function normalizeDefault(data: typeof bioDataDefault): typeof bioDataAlba {
+  const result: typeof bioDataAlba = {} as typeof bioDataAlba;
+  for (const lang of Object.keys(data)) {
+    const d = data[lang];
+    result[lang] = {
+      ...d,
+      subsection: '',
+      skills: {
+        software: d.skills.software,
+        hardware_laboratori: [...d.skills.hardware, ...d.skills.laboratori],
+        other: d.skills.other,
+      },
+      labels: {
+        ...d.labels,
+        hardware_laboratori: `${d.labels.hardware} & ${d.labels.laboratori}`,
+      },
+    } as BioData;
+  }
+  return result;
+}
+
+const bioRegistry: Record<string, typeof bioDataAlba> = {
+  alba: bioDataAlba,
+  default: normalizeDefault(bioDataDefault),
+};
 import { Globe, Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 
 function CVContent() {
   const searchParams = useSearchParams();
   const [lang, setLang] = useState<'ca' | 'en' | 'es'>('ca');
-  const [data, setData] = useState<BioData>(bioDataMultilingual.ca);
+  const [data, setData] = useState<BioData>(bioDataAlba.ca);
 
   useEffect(() => {
     const langParam = searchParams.get('lang') as 'ca' | 'en' | 'es';
+    const bioParam = searchParams.get('bio') ?? 'alba';
     if (langParam && ['ca', 'en', 'es'].includes(langParam)) {
       setLang(langParam);
     }
+    const bioData = bioRegistry[bioParam] ?? bioDataDefault;
+    const currentLang = (langParam && ['ca', 'en', 'es'].includes(langParam)) ? langParam : lang;
+    setData(bioData[currentLang]);
   }, [searchParams]);
 
   useEffect(() => {
-    setData(bioDataMultilingual[lang]);
+    const bioParam = searchParams.get('bio') ?? 'alba';
+    const bioData = bioRegistry[bioParam] ?? bioDataDefault;
+    setData(bioData[lang]);
   }, [lang]);
 
   return (

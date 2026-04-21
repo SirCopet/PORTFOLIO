@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
-import { bioDataMultilingual, BioData } from '../../../private/bio';
-import { Globe, Mail } from 'lucide-react';
+import { bioDataMultilingual, BioData } from '../../../private/bio_default';
+import { Globe, Mail, Linkedin } from 'lucide-react';
 
 function CVContent() {
   const searchParams = useSearchParams();
@@ -37,10 +37,10 @@ function CVContent() {
             </h2>
           </div>
           <div className="flex flex-col items-start space-y-1.5 text-xs text-gray-600 font-medium">
-            <a 
-              href={data.url} 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href={data.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 transition-colors"
             >
               <Globe className="w-3.5 h-3.5 text-blue-500" />
@@ -50,6 +50,15 @@ function CVContent() {
               <Mail className="w-3.5 h-3.5 text-blue-500" />
               <span>{data.email}</span>
             </div>
+            <a
+              href={data.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 transition-colors"
+            >
+              <Linkedin className="w-3.5 h-3.5 text-blue-500" />
+              <span>{data.linkedin.replace(/^https?:\/\/(www\.)?/, '')}</span>
+            </a>
           </div>
         </header>
 
@@ -136,16 +145,24 @@ function CVContent() {
                   </div>
                 </div>
                 <div>
-                  <h4 className="text-xs font-semibold text-gray-800 mb-1">{data.labels.hardware}</h4>
-                  <p className="text-xs text-gray-700 leading-relaxed text-left">
-                    {data.skills.hardware.join(' • ')}
-                  </p>
+                  <h4 className="text-xs font-semibold text-gray-800 mb-1.5">{data.labels.hardware} & {data.labels.laboratori}</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {[...data.skills.hardware, ...data.skills.laboratori].map((skill, idx) => (
+                      <span key={idx} className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-[10px] font-medium border border-gray-200">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 <div>
-                  <h4 className="text-xs font-semibold text-gray-800 mb-1">{data.labels.other}</h4>
-                  <p className="text-xs text-gray-700 leading-relaxed text-left">
-                    {data.skills.other.join(' • ')}
-                  </p>
+                  <h4 className="text-xs font-semibold text-gray-800 mb-1.5">{data.labels.other}</h4>
+                  <div className="flex flex-wrap gap-1.5">
+                    {data.skills.other.map((skill, idx) => (
+                      <span key={idx} className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-[10px] font-medium border border-gray-200">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </section>
